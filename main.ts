@@ -10,7 +10,9 @@ radio.setGroup(1)
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
+  basic.showIcon(IconNames.Triangle)
   radio.sendString("Hello, World!")
+  basic.showIcon(IconNames.Happy)
 })
 
 radio.onReceivedString(function (receivedString) {
